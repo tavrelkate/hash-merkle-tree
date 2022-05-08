@@ -1,0 +1,1 @@
+This gem contains an implementation of "Merkle Hash Trees" (MHT). Specifically, it implements the variant described in RFC6962, as the initial use-case for this gem was for an implementation of a Certificate Transparency log server.
