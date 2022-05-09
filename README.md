@@ -32,11 +32,11 @@ Once we have our MHT object, we can start to do things with it.
 For example, we can get the hash of the "head" of the tree:
 
 
-    tree.head   # => "<some long string of octets>"
+    tree.head_build   # => "<some long string of octets>"
 
 
 We can also ask for a "consistency proof", we need to specify an index(n) of the last
-element of sub_tree (as a result it'll be (0...n)):
+element of sub_tree (as a result sub_tree will be `data[0...n]`):
 
 
     consistency_proof = tree.consistency_proof_build(10)   # => ["<hash>", "<hash>", ... ]
@@ -48,16 +48,14 @@ element of sub_tree (as a result it'll be (0...n)):
     tree.consistency_proof_build_head(consistency_proof)   # => "<some long string of octets>"
 
 
-There are also such things as "audit proofs" (again, I'm not going to
-explain them here), which you get by specifying a single leaf number and a
-subtree ID:
+There are also such things as "audit proofs", which you get by specifying a single leaf index:
 
 
     audit_proof = tree.audit_proof_build(10)   # => [ { value: "<hash>", position: "left" }, { value: "<hash>", position: "right" }, ... ]
 
 
 In this example, the audit proof will return a list of hashes
-that demonstrate that leaf 13 is in the tree and hasn't been removed or altered.
+that demonstrate that leaf `10` is in the tree and hasn't been removed or altered.
 You can test it checking sum with hash head of the tree. Or use:
 
 
