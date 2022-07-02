@@ -64,3 +64,10 @@ You can test it checking sum with hash head of the tree. Or use:
   
 
 
+## Contacts
+
+Contact me if you have any doubts or questions about this gem.
+
+Email: tavrelkate@gmail.com
+Telegram: @tavrelkate
+Email
