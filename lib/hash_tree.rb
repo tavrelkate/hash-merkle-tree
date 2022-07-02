@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'algorithm'
-require 'digest'
 
 module Merkle
   class HashTree
