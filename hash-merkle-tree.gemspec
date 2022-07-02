@@ -15,9 +15,7 @@ Gem::Specification.new do |s|
   s.license               = 'MIT'
   s.required_ruby_version = '>= 2.5.0'
 
-  s.files = Dir[ 'lib/**/*.rb',
-    'README.md', 'mekle-tree.gemspec'
-  ]
+  s.files = Dir[ 'lib/**/*.rb', 'README.md', 'hash-mekle-tree.gemspec' ]
 
   s.add_development_dependency 'rspec'
 end
