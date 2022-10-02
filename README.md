@@ -7,6 +7,10 @@ Specifically, it implements the variant described in
 [RFC6962](http://tools.ietf.org/html/rfc6962)
 
 
+
+
+![alt text](https://miro.medium.com/max/1194/1*wNm1yknGeuiSQyIFYxHrhA.png)
+
 ## Basic Usage
 
 Assume that you have such an object, named
@@ -70,4 +74,3 @@ Contact me if you have any doubts or questions about this gem.
 
 Email: tavrelkate@gmail.com
 Telegram: @tavrelkate
-Email
